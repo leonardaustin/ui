@@ -1,0 +1,43 @@
+{
+  "name": "ui-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.1.2",
+  "scripts": {
+    "dev": "pnpm --filter ui-demo dev",
+    "build": "pnpm --filter @leonardaustin/ui build && pnpm --filter ui-demo build",
+    "lint": "eslint . && node scripts/check-css-coverage.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview": "pnpm --filter ui-demo preview",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,html,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+    "@types/node": "^24.12.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.0",
+    "vite": "^8.0.1"
+  }
+}

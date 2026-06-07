@@ -1,0 +1,6 @@
+dist
+**/dist
+src/generated-utilities.css
+packages/ui/src/generated-utilities.css
+node_modules
+pnpm-lock.yaml
