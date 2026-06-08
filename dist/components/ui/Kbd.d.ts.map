@@ -1,0 +1,1 @@
+{"version":3,"file":"Kbd.d.ts","sourceRoot":"","sources":["../../../src/components/ui/Kbd.tsx"],"names":[],"mappings":"AAEA,UAAU,QAAQ;IAChB,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAC;IAC1B,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB;AAED,wBAAgB,GAAG,CAAC,EAAE,QAAQ,EAAE,SAAS,EAAE,EAAE,QAAQ,2CAYpD"}
