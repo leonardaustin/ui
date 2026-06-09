@@ -1,0 +1,45 @@
+{
+  "name": "@leonardaustin/ui",
+  "version": "0.3.0",
+  "description": "Reusable React component library and application shell for Leonard Austin projects.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "*.css",
+    "**/*.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardaustin/ui.git",
+    "directory": "ui"
+  },
+  "bugs": {
+    "url": "https://github.com/leonardaustin/ui/issues"
+  },
+  "homepage": "https://github.com/leonardaustin/ui#readme",
+  "keywords": [
+    "react",
+    "components",
+    "component-library",
+    "design-system",
+    "ui"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "peerDependencies": {
+    "lucide-react": "^1.7.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
