@@ -1,0 +1,51 @@
+# This workflow is DEPLOYED to the public leonardaustin/ui repo by ui-mono's
+# sync-public.yml (copied to .github/workflows/publish.yml there). Do not expect
+# it to run inside ui-mono — it lives here only as the source of truth.
+#
+# It publishes the already-built package (dist + package.json at the repo root)
+# to npm via OIDC trusted publishing. Publishing from the public `ui` repo means
+# provenance points at `ui`, never at the private `ui-mono`.
+#
+# npmjs.com Trusted Publisher config: repo leonardaustin/ui, workflow publish.yml.
+name: Publish to npm
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # required for npm OIDC trusted publishing
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # This runs in the PUBLIC ui repo, where GitHub-hosted runners are free and
+    # the private xit fleet isn't attached — so ubuntu-latest, not xit.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          registry-url: "https://registry.npmjs.org"
+
+      # Trusted publishing requires npm >= 11.5.1; Node 22 ships npm 10.x.
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+
+      - name: Publish to npm
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          if npm view "@leonardaustin/ui@${VERSION}" version >/dev/null 2>&1; then
+            echo "npm already has ${VERSION} — skipping publish"
+          else
+            # dist is already built (synced from ui-mono); no build step. OIDC
+            # provides auth; provenance is generated against this public repo.
+            npm publish --access public
+          fi

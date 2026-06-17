@@ -1,0 +1,1 @@
+{"version":3,"file":"SettingsProvider.d.ts","sourceRoot":"","sources":["../../src/providers/SettingsProvider.tsx"],"names":[],"mappings":"AAAA,OAAO,EAKL,KAAK,SAAS,EACf,MAAM,OAAO,CAAC;AA2Of,MAAM,WAAW,qBAAqB;IACpC,QAAQ,EAAE,SAAS,CAAC;IACpB,UAAU,CAAC,EAAE,MAAM,CAAC;CACrB;AAED,wBAAgB,gBAAgB,CAAC,EAC/B,QAAQ,EACR,UAAgC,GACjC,EAAE,qBAAqB,2CAqNvB"}

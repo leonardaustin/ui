@@ -1,0 +1,1 @@
+{"version":3,"file":"DonutChart.d.ts","sourceRoot":"","sources":["../../../src/components/charts/DonutChart.tsx"],"names":[],"mappings":"AAIA,UAAU,YAAY;IACpB,IAAI,EAAE,MAAM,CAAC;IACb,KAAK,EAAE,MAAM,CAAC;IACd,KAAK,EAAE,MAAM,CAAC;CACf;AAED,UAAU,eAAe;IACvB,QAAQ,EAAE,YAAY,EAAE,CAAC;IACzB,IAAI,CAAC,EAAE,MAAM,CAAC;CACf;AA4CD,wBAAgB,UAAU,CAAC,EAAE,QAAQ,EAAE,IAAU,EAAE,EAAE,eAAe,2CAiKnE"}
