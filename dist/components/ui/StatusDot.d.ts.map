@@ -1,0 +1,1 @@
+{"version":3,"file":"StatusDot.d.ts","sourceRoot":"","sources":["../../../src/components/ui/StatusDot.tsx"],"names":[],"mappings":"AAEA,KAAK,MAAM,GAAG,QAAQ,GAAG,UAAU,GAAG,SAAS,GAAG,OAAO,CAAC;AAE1D,UAAU,cAAc;IACtB,MAAM,EAAE,MAAM,CAAC;IACf,KAAK,CAAC,EAAE,MAAM,CAAC;IACf,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB;AAgBD,wBAAgB,SAAS,CAAC,EAAE,MAAM,EAAE,KAAK,EAAE,SAAS,EAAE,EAAE,cAAc,2CASrE"}
