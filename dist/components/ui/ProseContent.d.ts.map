@@ -1,0 +1,1 @@
+{"version":3,"file":"ProseContent.d.ts","sourceRoot":"","sources":["../../../src/components/ui/ProseContent.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AAIvC,MAAM,WAAW,iBAAiB;IAChC,4EAA4E;IAC5E,QAAQ,EAAE,SAAS,CAAC;IACpB,+DAA+D;IAC/D,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB;AAED,wBAAgB,YAAY,CAAC,EAAE,QAAQ,EAAE,SAAS,EAAE,EAAE,iBAAiB,2CAEtE"}
