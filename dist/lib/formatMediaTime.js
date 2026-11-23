@@ -1,0 +1,7 @@
+//#region src/lib/formatMediaTime.ts
+function e(e) {
+	let t = Math.max(0, Math.floor(e)), n = Math.floor(t / 3600), r = Math.floor(t % 3600 / 60), i = String(t % 60).padStart(2, "0");
+	return n > 0 ? `${n}:${String(r).padStart(2, "0")}:${i}` : `${r}:${i}`;
+}
+//#endregion
+export { e as formatMediaTime };

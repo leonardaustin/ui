@@ -1,0 +1,51 @@
+
+
+/* ─── Monokai Theme ─── */
+
+.theme-monokai {
+  --bg-primary: #272822;
+  --bg-secondary: #2d2e27;
+  --bg-tertiary: #3e3d32;
+  --bg-hover: #49483e;
+  --bg-active: #555449;
+  --bg-sidebar: #23241e;
+
+  --text-primary: #f8f8f2;
+  --text-secondary: #b6b6ad;
+  --text-tertiary: #a9a79b;
+  --text-disabled: #5c5b50;
+  --text-inverse: #272822;
+  --text-on-accent: #272822;
+
+  --border: #3e3d32;
+  --border-strong: #555449;
+
+  --accent: #a6e22e;
+  --accent-fg: color-mix(in srgb, var(--accent), white 44%);
+  --accent-hover: #95cb29;
+  --accent-active: #84b424;
+  --accent-muted: rgba(166, 226, 46, 0.15);
+  --accent-subtle: rgba(166, 226, 46, 0.08);
+
+  --green: #a6e22e;
+  --green-muted: rgba(166, 226, 46, 0.15);
+  --red: #f92672;
+  --red-fg: #fb6d9f;
+  --red-muted: rgba(249, 38, 114, 0.15);
+  --yellow: #e6db74;
+  --yellow-muted: rgba(230, 219, 116, 0.15);
+  --blue: #66d9ef;
+  --blue-muted: rgba(102, 217, 239, 0.15);
+  --purple: #ae81ff;
+  --purple-fg: #b993ff;
+  --purple-muted: rgba(174, 129, 255, 0.15);
+  --teal: #3ddbc0;
+  --teal-muted: rgba(61, 219, 192, 0.15);
+  --rose: #fd5ff0;
+  --rose-fg: #fd6df1;
+  --rose-muted: rgba(253, 95, 240, 0.15);
+
+  --shadow-focus: 0 0 0 2px rgba(166, 226, 46, 0.25);
+
+  color-scheme: dark;
+}

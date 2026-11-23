@@ -1,0 +1,55 @@
+
+
+/* ─── Solarized Theme ─── */
+
+.theme-solarized {
+  --bg-primary: #002b36;
+  --bg-secondary: #073642;
+  --bg-tertiary: #0a3f4c;
+  --bg-hover: #0d4d5c;
+  --bg-active: #115b6c;
+  --bg-sidebar: #001f27;
+
+  --text-primary: #fdf6e3;
+  --text-secondary: #abb6b6;
+  --text-tertiary: #95a5aa;
+  --text-disabled: #586e75;
+  --text-inverse: #002b36;
+  --text-on-accent: #000000;
+
+  --border: #0a3f4c;
+  --border-strong: #0d4d5c;
+
+  --accent: #268bd2;
+  --accent-fg: color-mix(in srgb, var(--accent), white 48%);
+  --accent-hover: #1f7bbe;
+  --accent-active: #1b79bf;
+  --accent-muted: rgba(38, 139, 210, 0.15);
+  --accent-subtle: rgba(38, 139, 210, 0.08);
+
+  --green: #859900;
+  --green-fg: #9eb221;
+  --green-muted: rgba(133, 153, 0, 0.15);
+  --red: #dc322f;
+  --red-fg: #e97b78;
+  --red-muted: rgba(220, 50, 47, 0.15);
+  --yellow: #b58900;
+  --yellow-fg: #caa11d;
+  --yellow-muted: rgba(181, 137, 0, 0.15);
+  --blue: #268bd2;
+  --blue-fg: #68afe0;
+  --blue-muted: rgba(38, 139, 210, 0.15);
+  --purple: #6c71c4;
+  --purple-fg: #9da0d8;
+  --purple-muted: rgba(108, 113, 196, 0.15);
+  --teal: #2aa198;
+  --teal-fg: #59bab3;
+  --teal-muted: rgba(42, 161, 152, 0.15);
+  --rose: #d33682;
+  --rose-fg: #e27cad;
+  --rose-muted: rgba(211, 54, 130, 0.15);
+
+  --shadow-focus: 0 0 0 2px rgba(38, 139, 210, 0.25);
+
+  color-scheme: dark;
+}
