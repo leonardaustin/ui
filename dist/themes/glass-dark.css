@@ -1,0 +1,217 @@
+
+
+/* ─── Glass Themes ─── */
+
+.theme-glass-dark {
+  --bg-primary: #11151c;
+  --bg-secondary: rgba(23, 32, 55, 0.65);
+  --glass-card-bg: rgba(23, 32, 55, 0.48);
+  --bg-tertiary: rgba(27, 37, 61, 0.7);
+  --bg-hover: rgba(214, 226, 255, 0.12);
+  --bg-active: rgba(214, 226, 255, 0.2);
+  --bg-overlay: rgba(5, 9, 24, 0.36);
+  --bg-sidebar: rgba(18, 26, 48, 0.7);
+  --bg-media-badge: rgba(0, 0, 0, 0.2);
+  --control-knob: #ffffff;
+  --qr-foreground: #000000;
+  --qr-background: #ffffff;
+
+  --text-primary: #f4f6ff;
+  --text-secondary: #c5cee7;
+  --text-tertiary: #aab8d7;
+  --text-placeholder: var(--text-tertiary);
+  --text-disabled: #7886a5;
+  --text-inverse: #10162b;
+  --text-on-accent: #040406;
+  --text-on-avatar: #ffffff;
+  --text-on-media: #ffffff;
+  --text-on-media-muted: rgba(255, 255, 255, 0.8);
+
+  --border: rgba(224, 234, 255, 0.2);
+  --border-strong: rgba(239, 244, 255, 0.38);
+  --border-focus: var(--accent);
+
+  --accent: #8869f7;
+  --accent-fg: var(--glass-accent-text);
+  --accent-hover: var(--glass-accent-hover);
+  --glass-accent-text: color-mix(in srgb, var(--accent), white 49%);
+  --glass-accent-text-hover: color-mix(in srgb, var(--accent), white 60%);
+  --accent-active: var(--glass-accent-active);
+  --accent-muted: rgba(164, 139, 255, 0.22);
+  --accent-subtle: rgba(164, 139, 255, 0.12);
+
+  --green: #4ade80;
+  --green-fg: #52e086;
+  --green-muted: rgba(74, 222, 128, 0.15);
+  --yellow: #fbbf24;
+  --yellow-fg: var(--yellow);
+  --yellow-muted: rgba(251, 191, 36, 0.15);
+  --red: #f87171;
+  --red-fg: #fa9e9e;
+  --red-muted: rgba(248, 113, 113, 0.15);
+  --blue: #60a5fa;
+  --blue-fg: #91c1fc;
+  --blue-muted: rgba(96, 165, 250, 0.15);
+  --purple: #a78bfa;
+  --purple-fg: #c3b0fc;
+  --purple-muted: rgba(167, 139, 250, 0.15);
+  --teal: #2dd4bf;
+  --teal-fg: #48dac7;
+  --teal-muted: rgba(45, 212, 191, 0.15);
+  --rose: #fb7185;
+  --rose-fg: #fc9caa;
+  --rose-muted: rgba(251, 113, 133, 0.15);
+
+  --shadow-sm:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 2px 8px rgba(2, 6, 23, 0.2);
+  --shadow-md:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 8px 28px rgba(2, 6, 23, 0.28);
+  --shadow-lg:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 20px 60px rgba(2, 6, 23, 0.42);
+  --shadow-focus: 0 0 0 2px rgba(170, 147, 255, 0.5);
+  --shadow-knob: 0 0 1px rgba(0, 0, 0, 0.1), 2px 0 4px rgba(0, 0, 0, 0.35);
+
+  --transition-fast: 100ms ease;
+  --transition-base: 150ms ease;
+  --transition-slow: 250ms ease;
+
+  --sidebar-width: 220px;
+  --sidebar-collapsed: 48px;
+  --topbar-height: 36px;
+  --bottomnav-height: 56px;
+
+  --ui-radius: 8px;
+  --ui-radius-md: 12px;
+  --ui-radius-lg: 16px;
+  --ui-radius-xl: 24px;
+  --ui-border-width: 1px;
+  --ui-tracking: 0.05em;
+  --ui-line-height: 1.45;
+  --ui-density: 0.25rem;
+
+  --font-ui: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-prose:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-control:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-label:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-navigation:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-data:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+
+  --glass-blur: 20px;
+  --glass-saturate: 145%;
+  --glass-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  --glass-solid-secondary: #18213a;
+  --glass-solid-tertiary: #222d49;
+  --glass-solid-sidebar: #121a30;
+  --glass-solid-hover: #303d5b;
+  --glass-solid-active: #3a4868;
+  --glass-canvas:
+    radial-gradient(
+      ellipse at 12% 8%,
+      color-mix(in oklab, var(--accent) 20%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 88% 84%,
+      color-mix(in oklab, var(--accent) 11%, transparent),
+      transparent 55%
+    );
+  --bg-content: var(--bg-secondary);
+  --bg-table: var(--bg-secondary);
+  --bg-table-header: var(--glass-solid-secondary);
+  --text-table-header: var(--text-secondary);
+  --text-table-header-hover: var(--text-primary);
+
+  color-scheme: dark;
+}
+
+/* ─── Glass canvas and surfaces ─── */
+
+.theme-glass {
+  /* Lighten interactive fills so one dark label stays readable through the transition. */
+  --glass-accent-hover: color-mix(in srgb, var(--accent), white 16%);
+  --glass-accent-active: color-mix(in srgb, var(--accent), white 7%);
+  --bg-pinned: var(--glass-solid-secondary);
+  --bg-tooltip: var(--glass-solid-tertiary);
+}
+
+@supports not (color: color-mix(in srgb, red, white)) {
+  .theme-glass {
+    --glass-accent-text: var(--text-secondary);
+    --glass-accent-text-hover: var(--text-primary);
+    --glass-accent-hover: var(--accent);
+    --glass-accent-active: var(--accent);
+  }}
+
+.theme-glass .ui-prose a:hover {
+  color: var(--glass-accent-text-hover);
+}
+
+@layer utilities {
+
+  @media (hover: hover) {
+    .theme-glass .hover\:text-accent-hover:hover {
+      color: var(--glass-accent-text-hover);
+    }}}
+
+/* Panels contain their own content and stacking order. Cards and chrome paint
+   their pane before their positioned children, leaving inline menus free to
+   overlap siblings without lifting the surface itself. */
+.theme-glass .ui-glass:is(.ui-glass-popover, [aria-modal="true"]) {
+  isolation: isolate;
+}
+
+.theme-glass .ui-glass:is(.ui-glass-popover, [aria-modal="true"])::before {
+  z-index: -1;
+}
+
+.theme-glass .ui-glass.shadow-lg {
+  --utility-shadow: var(--shadow-lg);
+}
+
+.theme-glass .ui-glass.shadow-md {
+  --utility-shadow: var(--shadow-md);
+}
+
+/* Inline field menus clear BottomNav (30) while staying below the mobile
+   drawer backdrop (40) and modal overlays (50). */
+.theme-glass
+  .ui-glass:not(.ui-glass-popover, [aria-modal="true"])
+  .ui-glass-popover.fixed {
+  z-index: 31;
+}
+
+/* Fall back to opaque fills when neither backdrop-filter spelling is
+   supported. Reduced transparency uses the same opaque tokens below. */
+@supports not (
+  (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+) {
+  .theme-glass {
+    --glass-filter: none;
+    --glass-canvas: none;
+    --glass-card-bg: var(--glass-solid-secondary);
+    --bg-secondary: var(--glass-solid-secondary);
+    --bg-tertiary: var(--glass-solid-tertiary);
+    --bg-sidebar: var(--glass-solid-sidebar);
+    --bg-hover: var(--glass-solid-hover);
+    --bg-active: var(--glass-solid-active);
+  }}
+
+@media (prefers-reduced-transparency: reduce) {
+  .theme-glass {
+    --glass-filter: none;
+    --glass-canvas: none;
+    --glass-card-bg: var(--glass-solid-secondary);
+    --bg-secondary: var(--glass-solid-secondary);
+    --bg-tertiary: var(--glass-solid-tertiary);
+    --bg-sidebar: var(--glass-solid-sidebar);
+    --bg-hover: var(--glass-solid-hover);
+    --bg-active: var(--glass-solid-active);
+  }}

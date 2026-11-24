@@ -1,0 +1,32 @@
+
+
+/* ─── Light Inverted Theme ─── */
+
+.theme-light-inverted {
+  --bg-primary: #f1f2f4;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f7f7f8;
+  --bg-sidebar: #ffffff;
+  --text-secondary: #686872;
+  --text-tertiary: #6e6e75;
+  --accent-fg: color-mix(in srgb, var(--accent), black 40%);
+  --green-fg: #157839;
+  --yellow-fg: #856505;
+  --red-fg: #b83434;
+  --blue-fg: #2d64bc;
+  --purple-fg: #724ccb;
+  --teal-fg: #0d7569;
+  --rose-fg: #b93047;
+
+  --bg-content: var(--bg-secondary);
+  --bg-table: var(--bg-secondary);
+  --bg-table-header: var(--bg-tertiary);
+  --text-table-header: var(--text-secondary);
+  --text-table-header-hover: var(--text-primary);
+}
+
+@media (width < 40rem) {
+
+  .theme-light-inverted .ui-email-header h1 {
+    flex: 1 0 calc(100% - 2rem);
+  }}

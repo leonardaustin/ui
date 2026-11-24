@@ -1,0 +1,53 @@
+
+
+/* ─── Cyber Brutal Dark Theme ─── */
+
+.theme-cyber-brutal-dark {
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+  --bg-tertiary: #111111;
+  --bg-hover: #1a1a1a;
+  --bg-active: #222222;
+  --bg-overlay: rgba(0, 0, 0, 0.6);
+  --bg-sidebar: #000000;
+
+  --text-primary: #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #7b7b84;
+  --text-disabled: #52525b;
+  --text-inverse: #050505;
+  --text-on-accent: #050505;
+
+  --border: #27272a;
+  --border-strong: #3f3f46;
+
+  --accent: #34d399;
+  --accent-fg: color-mix(in srgb, var(--accent), white 22%);
+  --accent-hover: #2cc08a;
+  --accent-active: #25a777;
+  --accent-muted: rgba(52, 211, 153, 0.15);
+  --accent-subtle: rgba(52, 211, 153, 0.08);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.7);
+  --shadow-focus: 0 0 0 2px rgba(52, 211, 153, 0.3);
+
+  --ui-radius: 0;
+  --ui-radius-md: 0;
+  --ui-radius-lg: 0;
+  --ui-radius-xl: 0;
+  --ui-tracking: 0.2em;
+  --ui-line-height: 1.4;
+  --ui-density: 0.22rem;
+
+  --font-ui: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+  --font-heading: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+  --font-prose: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+  --font-control: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+  --font-label: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+  --font-navigation: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+  --font-data: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+
+  color-scheme: dark;
+}

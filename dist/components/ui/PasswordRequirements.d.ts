@@ -1,0 +1,14 @@
+import type { ComponentPropsWithRef } from "react";
+import { type PasswordRequirement } from "../../lib/passwordRequirements";
+export interface PasswordRequirementsProps extends Omit<ComponentPropsWithRef<"ul">, "children"> {
+    /** The password to check against each rule. */
+    password: string;
+    /** Rules to list, each with a unique label. Defaults to `defaultPasswordRequirements`. */
+    requirements?: readonly PasswordRequirement[];
+    /** Keep the list visible while the password is empty. */
+    showWhenEmpty?: boolean;
+    /** Additional utility classes appended to the list. */
+    className?: string;
+}
+/** A live checklist of password rules, ticked off as the user types. */
+export declare function PasswordRequirements({ password, requirements, showWhenEmpty, className, ref, ...rest }: PasswordRequirementsProps): import("react/jsx-runtime").JSX.Element | null;
